@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Datepicker</title>
+    <link rel="stylesheet" href="/Resources/css/jquery-ui.css" />
+</head>
+<body>
+    <div><input id="salida" type="text" /></div>
+    <div><input id="regreso" type="text" /></div>
+
+    <script type="text/javascript" src="/Resources/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/Resources/js/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#salida").datepicker();
+        });
+    </script>
+</body>
+</html>
