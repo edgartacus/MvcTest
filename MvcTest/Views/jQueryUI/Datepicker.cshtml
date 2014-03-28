@@ -11,12 +11,47 @@
 <body>
     <div><input id="salida" type="text" /></div>
     <div><input id="regreso" type="text" /></div>
+    
+    <div id="calendarioLinea"></div>
+    @*<input type="text" id="calendarioLinea"/>*@
+    
+    <input type="button" id="boton" value="ocultar" />
 
     <script type="text/javascript" src="/Resources/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="/Resources/js/jquery-ui.js"></script>
     <script type="text/javascript">
+        (function ($) {
+            $.extend($.datepicker, {
+
+                // Reference the orignal function so we can override it and call it later
+                _inlineDatepicker2: $.datepicker._inlineDatepicker,
+
+                // Override the _inlineDatepicker method
+                _inlineDatepicker: function (target, inst) {
+
+                    // Call the original
+                    this._inlineDatepicker2(target, inst);
+
+                    var beforeShow = $.datepicker._get(inst, 'beforeShow');
+
+                    if (beforeShow) {
+                        beforeShow.apply(target, [target, inst]);
+                    }
+                }
+            });
+        }(jQuery));
+        
         $(document).ready(function () {
-            $("#salida").datepicker();
+            //$(".hasDatepicker").blur(function (e) { $(this).datepicker("hide"); });
+            $("#calendarioLinea").datepicker({
+                onClose :function () {
+                    alert("hola");
+                }
+            });
+            
+            $("#boton").click(function () {
+                $("calendarioLinea").trigger("close");
+            });
         });
     </script>
 </body>
