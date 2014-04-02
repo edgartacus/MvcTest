@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="/Resources/css/jquery-ui.css" />
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    @RenderBody()
+    <script type="text/javascript" src="/Resources/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/Resources/js/jquery-ui.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

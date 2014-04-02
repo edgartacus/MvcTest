@@ -145,6 +145,12 @@
   <ItemGroup>
     <Content Include="Views\jQueryUI\Datepicker.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_jQueryUI.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\jQueryUI\Autocomplete.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

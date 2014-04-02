@@ -21,5 +21,9 @@ namespace MvcTest.Controllers
             return View();
         }
 
+        public ActionResult Autocomplete() {
+            return View();
+        }
+
     }
 }
