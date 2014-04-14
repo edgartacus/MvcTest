@@ -110,6 +110,7 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\jQueryUIController.cs" />
+    <Compile Include="Controllers\KalServiceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -150,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\jQueryUI\Autocomplete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\KalService\PaqComplete.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

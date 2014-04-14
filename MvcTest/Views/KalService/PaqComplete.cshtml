@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "PaqComplete";
+    Layout = "~/Views/Shared/_jQueryUI.cshtml";
+}
+<h2>PaqComplete</h2>
+<div><input type="text" id="Origen" /></div>
+<div><input type="text" id="Destino" /></div>
+
+@section scripts {
+<script type="text/javascript">
+    $(function () {
+        $("#Origen").autocomplete({
+            minLength: 3,
+            delay: 500,
+            source: function (request, response) {
+                $.ajax({
+                    url: "//ajax.e-tsw.com/searchservices/getSearchJson.aspx",
+                    dataType: "jsonp",
+                    data: {
+                        PalabraBuscada: request.term,
+                        Lenguaje: "esp",
+                        ItemTypes: "A:10",
+                        Filters: "",
+                        Af: "hsbc"
+                    },
+                    beforeSend: function () {},
+                    complete: function () {},
+                    success: function (data) {
+                        var arrayDestinations = new Array();
+                        var object = new Object();
+                        var DestId = "";
+                        for (var a = 0; a < data.results.length; a++) {
+                            object = data.results[a];
+                            DestId = object.TypeID.toString().split('|')[1];
+                            if (DestId != "") {
+                                arrayDestinations.push(object);
+                            }
+                        }
+                        if (!arrayDestinations.length) {
+                            response($.map([{ "Label": "No se encontraron resultados" }], function (item) {
+                                return {
+                                    id: "0",
+                                    label: item.Label,
+                                    value: item.Label,
+                                    countryId: "0",
+                                    typeId: "A|0",
+                                    type: "A"
+                                };
+                            }));
+                        }
+                        else {
+                            response($.map(arrayDestinations, function (item) {
+                                return {
+                                    id: item.ID,
+                                    label: item.Label,
+                                    value: item.Label,
+                                    countryId: item.Country,
+                                    typeId: item.TypeID,
+                                    type: item.Type
+                                };
+                            }));
+                        }
+                    }
+                });
+            },
+            select: function (event, iu) {
+                var IATA = iu.item.typeId.toString().split('|')[0];
+                $("#EtIATAob").val(IATA); //IATA Origen
+                $("#EtWthLea").val("1");
+                $("#EtBxOrigin").css({ 'border': '' });
+            },
+            focus: function () {
+                return false;
+            },
+            open: function (event, iu) {
+            }
+        }).data("autocomplete")._renderItem = function (ul, item) {
+            var flagImage;
+            flagImage = (item.countryId != "") ? "<img src='//www.e-travelsolution.com/_lib/vimages/Flags/" + item.countryId + ".gif' /> " : "";
+            item.value2 = item.value.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + $.ui.autocomplete.escapeRegex(this.term) + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<strong>$1</strong>");
+            return $("<li></li>").data("item.autocomplete", item)
+            .append($("<a></a>, ").html(flagImage + "<span class='EtSpCtAc'>" + item.value2 + "</span>"))
+            .appendTo(ul);
+        }
+    });
+</script>
+}
