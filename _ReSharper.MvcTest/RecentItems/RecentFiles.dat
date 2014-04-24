@@ -1,20 +1,28 @@
 ﻿<RecentFiles>
   <RecentFiles>
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/f:Global.asax.cs" caret="0" fromTop="0" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:HomeController.cs" caret="307" fromTop="15" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:jQueryUIController.cs" caret="410" fromTop="20" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:Home/f:Index.cshtml" caret="53" fromTop="4" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:jQueryUI/f:Datepicker.cshtml" caret="434" fromTop="10" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:App_Start/f:RouteConfig.cs" caret="0" fromTop="0" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:Shared/f:_jQueryUI.cshtml" caret="258" fromTop="9" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryUI/f:Datepicker.cshtml" caret="434" fromTop="10" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Resources/d:js/f:jquery.validity.js" caret="364" fromTop="0" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryUI/f:Autocomplete.cshtml" caret="1443" fromTop="30" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:KalService/f:PaqComplete.cshtml" caret="0" fromTop="0" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:HomeController.cs" caret="333" fromTop="18" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:Shared/f:_jQueryUI.cshtml" caret="0" fromTop="0" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:KalServiceController.cs" caret="441" fromTop="16" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:KalService/f:PaqComplete.cshtml" caret="422" fromTop="14" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryUIController.cs" caret="196" fromTop="8" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:App_Start/f:WebApiConfig.cs" caret="0" fromTop="0" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:App_Start/f:RouteConfig.cs" caret="0" fromTop="0" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryValidityController.cs" caret="304" fromTop="14" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryValidity/f:Index.cshtml" caret="624" fromTop="23" />
   </RecentFiles>
   <RecentEdits>
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:jQueryUIController.cs" caret="415" fromTop="20" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:jQueryUI/f:Datepicker.cshtml" caret="1423" fromTop="36" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryUI/f:Datepicker.cshtml" caret="1423" fromTop="36" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:Shared/f:_jQueryUI.cshtml" caret="0" fromTop="0" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:KalServiceController.cs" caret="367" fromTop="11" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:KalService/f:PaqComplete.cshtml" caret="301" fromTop="9" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Resources/d:js/f:jquery.validity.js" caret="49835" fromTop="38" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryUIController.cs" caret="0" fromTop="0" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryValidityController.cs" caret="476" fromTop="17" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryValidity/f:Index.cshtml" caret="1039" fromTop="34" />
   </RecentEdits>
 </RecentFiles>

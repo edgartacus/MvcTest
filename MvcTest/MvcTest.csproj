@@ -109,7 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\jQueryUIController.cs" />
+    <Compile Include="Controllers\JQueryUIController.cs" />
+    <Compile Include="Controllers\JQueryValidityController.cs" />
     <Compile Include="Controllers\KalServiceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,6 +125,7 @@
     <Content Include="Resources\css\jquery-ui.css" />
     <Content Include="Resources\js\jquery-1.11.0.min.js" />
     <Content Include="Resources\js\jquery-ui.js" />
+    <Content Include="Resources\js\jquery.validity.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -144,16 +146,19 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\jQueryUI\Datepicker.cshtml" />
+    <Content Include="Views\JQueryUI\Datepicker.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_jQueryUI.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\jQueryUI\Autocomplete.cshtml" />
+    <Content Include="Views\JQueryUI\Autocomplete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\KalService\PaqComplete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\JQueryValidity\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

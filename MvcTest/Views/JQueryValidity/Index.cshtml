@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_jQueryUI.cshtml";
+}
+
+<h2>Index</h2>
+
+<form id="testForm"action="#" method="post">
+    <div>
+        <label>Nombre:</label>
+        <input type="text" id="nombre" name="nombre"/>
+    </div>
+
+    <div>
+        <label>Apellido:</label>
+        <input type="text" id="apellido" name="apellido"/>
+    </div>
+
+    <div>
+        <label>Sexo:</label>
+        <select id="sexo" name="sexo">
+            <option value="0">Seleccione una opción</option>
+            <option value="1">Femenino</option>
+            <option value="2">Masculino</option>
+        </select>
+    </div>
+    <div><input type="submit" value="enviar" /></div>
+</form>
+
+@section scripts {
+    <script src="/Resources/js/jquery.validity.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#testForm").validity(function () {
+                $("#nombre").
+                    require().
+                    match("number").
+                    range(4, 12);
+            });
+        })
+    </script>
+}

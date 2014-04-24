@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MvcTest.Controllers
 {
-    public class jQueryUIController : Controller
+    public class JQueryUIController : Controller
     {
         //
         // GET: /JqueryUi/
