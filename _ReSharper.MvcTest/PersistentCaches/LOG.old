@@ -1,13 +1,5 @@
-2014/04/22-17:31:04.274 41ac Recovering log #12
-2014/04/22-17:31:04.274 41ac Level-0 table #14: started
-2014/04/22-17:31:04.345 41ac Level-0 table #14: 13742 bytes OK
-2014/04/22-17:31:04.458 41ac Delete type=0 #12
-2014/04/22-17:31:04.459 41ac Delete type=3 #10
-2014/04/22-17:31:04.460 3bfc Compacting 4@0 + 0@1 files
-2014/04/22-17:31:04.605 3bfc Generated table #16: 117 keys, 40762 bytes
-2014/04/22-17:31:04.605 3bfc Compacted 4@0 + 0@1 files => 40762 bytes
-2014/04/22-17:31:04.628 3bfc Delete type=2 #5
-2014/04/22-17:31:04.628 3bfc Delete type=2 #8
-2014/04/22-17:31:04.629 3bfc Delete type=2 #11
-2014/04/22-17:31:04.629 3bfc Delete type=2 #14
-2014/04/22-17:31:04.629 3bfc compacted to: files[ 0 1 0 0 0 0 0 ]
+2014/05/06-11:51:55.444 22a0 Recovering log #19
+2014/05/06-11:51:55.444 22a0 Level-0 table #21: started
+2014/05/06-11:51:55.497 22a0 Level-0 table #21: 11692 bytes OK
+2014/05/06-11:51:55.572 22a0 Delete type=0 #19
+2014/05/06-11:51:55.572 22a0 Delete type=3 #17

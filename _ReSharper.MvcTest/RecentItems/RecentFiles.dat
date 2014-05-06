@@ -13,7 +13,7 @@
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:App_Start/f:WebApiConfig.cs" caret="0" fromTop="0" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:App_Start/f:RouteConfig.cs" caret="0" fromTop="0" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryValidityController.cs" caret="304" fromTop="14" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryValidity/f:Index.cshtml" caret="624" fromTop="23" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryValidity/f:Index.cshtml" caret="1082" fromTop="16" />
   </RecentFiles>
   <RecentEdits>
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryUI/f:Datepicker.cshtml" caret="1423" fromTop="36" />
@@ -23,6 +23,6 @@
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Resources/d:js/f:jquery.validity.js" caret="49835" fromTop="38" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryUIController.cs" caret="0" fromTop="0" />
     <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Controllers/f:JQueryValidityController.cs" caret="476" fromTop="17" />
-    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryValidity/f:Index.cshtml" caret="1039" fromTop="34" />
+    <File id="444030D5-037C-4EF7-B575-F7D95420B2F2/d:Views/d:JQueryValidity/f:Index.cshtml" caret="1468" fromTop="32" />
   </RecentEdits>
 </RecentFiles>

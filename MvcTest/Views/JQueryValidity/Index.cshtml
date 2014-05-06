@@ -8,12 +8,12 @@
 <form id="testForm"action="#" method="post">
     <div>
         <label>Nombre:</label>
-        <input type="text" id="nombre" name="nombre"/>
+        <input type="text" id="nombre" name="nombre" title="Nombre"/>
     </div>
 
     <div>
         <label>Apellido:</label>
-        <input type="text" id="apellido" name="apellido"/>
+        <input type="text" id="apellido" name="apellido" title="Apellido"/>
     </div>
 
     <div>
@@ -30,13 +30,25 @@
 @section scripts {
     <script src="/Resources/js/jquery.validity.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $("#testForm").validity(function () {
+        $(function() {
+            $("#testForm").validity(function() {
                 $("#nombre").
                     require().
                     match("number").
                     range(4, 12);
+
+                $("#apellido").require("El apellido es requerido please");
+
+                $("#sexo").assert(
+                    sexoValidate,
+                    "Debe seleccionar su género"
+                );
             });
-        })
+        });
+        
+        function sexoValidate(field) {
+            var value = field.value;
+            return value == 0 ? false : true;
+        }
     </script>
 }
