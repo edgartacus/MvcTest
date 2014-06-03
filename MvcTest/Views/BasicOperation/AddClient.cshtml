@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "AgregarCliente";
+}
+
+<h2>AgregarCliente</h2>
+<form action="@Url.Action("AddClient")" type="post">
+    <div>
+        <label for="id">Id</label>
+        <input type="text" id="id" name="id" />
+    </div>
+    <div>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" />
+    </div>
+    <div>
+        <label for="lastName">Apellido</label>
+        <input type="text" id="lastName" name="lastName" />
+    </div>
+    <div>
+        <label for="phone">Telefono 1</label>
+        <input type="text" id="phone1" name="phone1" />
+    </div>
+</form>
